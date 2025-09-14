@@ -1,0 +1,430 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6e6e6;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(11, 78, 78);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo img {
+    width: 70px;
+    margin: 0 18px;
+    border-radius: 5px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+    color: white;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+ul li a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+li a button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li a button:hover {
+    background-color: #45a049;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(16, 106, 106);
+    color: white;
+    height: 640px;
+    padding: 0 20px;
+}
+
+.mainText h1 {
+    font-size: 55px;
+}
+
+.mainText h3 {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.mainText button {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mainText button:hover {
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+/* Teams Section */
+.teams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 390px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 22px 20px 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card p {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review {
+    width: 300px;
+    height: 390px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 22px 20px 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+}
+
+.review img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.review p {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Headings */
+.head {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+/* Specialities */
+.speciality {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spCard {
+    width: 300px;
+    padding: 22px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 22px 20px 0;
+}
+
+.spCard img {
+    width: 200px;
+    max-width: 100%;
+}
+
+.spCard p {
+    margin-top: 11px;
+}
+
+/* Reviews Section */
+.reviews {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.patientReview,
+.productReview {
+    display: flex;
+    position: absolute;
+    transition: all 1s ease;
+    width: 300px;
+    padding: 22px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0; /* Removed gap */
+    /* text-align: center; */
+}
+
+
+
+
+.patientReview{
+    width: 300px;
+    padding: 22px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 22px 20px 0;
+}
+
+
+
+
+.patientReview img,
+.productReview img {
+    width: 300px;
+    margin: 0 18px;
+    border-radius: 4px;
+}
+
+/* Contact Section */
+.contact {
+    width: 300px;
+    background-color: #fff;
+    padding: 22px;
+    border-radius: 4px;
+    text-align: center;
+    margin: auto;
+}
+
+.contact h1 {
+    color: rgb(16, 103, 103);
+}
+
+.contact input {
+    width: 90%;
+    font-size: 18px;
+    padding: 9px;
+    margin-top: 22px;
+    border: none;
+    outline: none;
+    background-color: #e4e1e1;
+    border-radius: 2px;
+}
+
+.contact button {
+    width: 100px;
+    height: 30px;
+    background-color: #45a049;
+    color: white;
+    font-size: 17px;
+    border: none;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 66px 20px;
+    background-color: rgb(11, 76, 76);
+    color: white;
+    margin-top: 66px;
+}
+
+.footer .text p {
+    margin-top: 12px;
+}
+
+/* Detail Popup */
+.detail {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    background-color: #fff;
+    padding: 22px;
+    width: 400px;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.content {
+    display: flex;
+    gap: 22px;
+}
+
+.content img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.content p {
+    margin-top: 22px;
+}
+
+.detail button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(83, 196, 196);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hamburger Bar */
+#bar {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 1100px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 80px;
+        height: auto;
+    }
+
+    .main img {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .mainText h1 {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    ul {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+    }
+}
+
+@media (max-width: 850px) {
+    .reviews {
+        width: 90%;
+    }
+
+    .patientReview img {
+        width: 40%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .mainText h1 {
+        font-size: 33px;
+    }
+
+    .mainText h3 {
+        font-size: 23px;
+    }
+
+    .reviews {
+        width: 80%;
+    }
+
+    .patientReview img {
+        width: 40%;
+        height: 160px;
+        margin: 0 6px;
+    }
+
+    .contact {
+        width: 80%;
+    }
+
+    .detail {
+        width: 80%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content img {
+        width: 90%;
+        height: auto;
+    }
+}
